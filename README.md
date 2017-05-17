@@ -1,3 +1,8 @@
+**This fork of [Sparkup](https://github.com/rstacruz/sparkup) strips away the non-Vim bits and does away with all of
+the symbolic links. Instead, a global configuration variable - `g:sparkupFiletypes` - is used to store a list of
+filetypes, so it is user-configurable without creating symlinks under the `ftplugin` folder. Additionally, configuration
+options are now included in the Vim documentation so they can be found using `:h sparkup`.**
+
 Sparkup
 =======
 
@@ -11,11 +16,11 @@ You can write HTML in a CSS-like syntax, and have Sparkup handle the expansion t
 code. It is meant to help you write long HTML blocks in your text editor by letting you
 type less characters than needed.
 
-Sparkup is written in Python, and requires Python 2.5 or newer (2.5 is preinstalled in 
+Sparkup is written in Python, and requires Python 2.5 or newer (2.5 is preinstalled in
 Mac OS X Leopard). Sparkup also offers integration into common text editors. Support for VIM
 and TextMate are currently included.
 
-A short screencast is available here: 
+A short screencast is available here:
 [http://www.youtube.com/watch?v=Jw3jipcenKc](http://www.youtube.com/watch?v=Jw3jipcenKc)
 
 Usage and installation
@@ -30,7 +35,7 @@ You may download Sparkup from GitHub. [Download the latest version here](http://
  - **VIM**: See the `vim/README.txt` file for installation. In VIM,
    create or open an HTML file (or set the filetype to ``html``), type in something (e.g.
    `#header > h1`), then press `<C-E>` whilst in **insert mode** to expand to HTML.
-   Pressing `<C-n>`  will cycle through empty elements.  Variables specified in 
+   Pressing `<C-n>`  will cycle through empty elements.  Variables specified in
    `vim/README.txt` can be used to customise key mappings, and to add **normal mode** mappings
    as well.
 
